@@ -110,6 +110,29 @@ footer {
     border-top: 1px solid #e8e8e8;
 }
 
+.footer-top {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #70757a;
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 /* Mobile */
 @media (max-width: 600px) {
     main {
@@ -134,5 +157,11 @@ footer {
 
     .buttons button {
         width: 100%;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
